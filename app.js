@@ -1,5 +1,6 @@
 import Fluxible from 'fluxible';
 import Application from './components/Application';
+import ApiStore from './stores/ApiStore';
 import ApplicationStore from './stores/ApplicationStore';
 import RouteStore from './stores/RouteStore';
 
@@ -11,5 +12,6 @@ const app = new Fluxible({
 // register stores
 app.registerStore(RouteStore);
 app.registerStore(ApplicationStore);
+app.registerStore(ApiStore);
 
 module.exports = app;
