@@ -1,5 +1,6 @@
 ---
   parser: "babel-eslint"
+  extends: "defaults/configurations/airbnb/es6-react"
   env:
     node: true
   rules:
@@ -7,3 +8,5 @@
     indent: [2, 4]
     quotes: [2, 'single']
     no-unused-vars: 0 // see https://github.com/babel/babel-eslint/issues/21
+    no-console: 0
+    func-names: 0
